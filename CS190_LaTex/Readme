@@ -1,0 +1,37 @@
+Contents:
+I.   Important files/subdirectories
+II.  Our file naming convention
+III. Four steps to generate the DVI file
+IV.  IEEE help manual, ICS sample journal articles, etc..
+
+-------------
+
+I. Important files/subdirectories:
+   1. A .tex file as your main latex file
+   2. A .bib file to contain your bibliographies
+   3. A .eps format of your picture
+   4. An *images* subfolder to contain other graphics for your document
+   5. Subfolder IEEE which contains the following IEEE class/style templates:
+      a) IEEEtran.cls (document class template)
+      b) IEEEtran.bst (bibliography style)
+
+II. Our file naming convention
+   1. <surname>-cs190-ieee.tex (for the main latex file)
+   2. <surname>-cs190-ieee.bib (for the bibliography database)
+   3. <surname>.eps (your picture)
+   
+   Example:
+   1. delacruz-cs190-ieee.tex
+   2. delacruz-cs190-ieee.bib
+   3. delacruz.eps
+            
+III. Four steps to generate the DVI file: (Example under Mandrake...)
+   1. $ latex cs190-ieee.tex
+   2. $ bibtex cs190-ieee.aux
+   3. $ latex cs190-ieee.tex
+   4. $ latex cs190-ieee.tex
+  *5. $ dvipdf cs190-ieee.dvi (to create the .pdf file)
+   
+IV. IEEE help manual, ICS sample journal articles, etc..
+   (see *IEEE-docs* and *ICS-sample* subdirectories)
+   
